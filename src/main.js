@@ -22,7 +22,7 @@ const BASE_API = import.meta.env.MODE === 'development'
 const BASE_URL = 'https://suitmedia-backend.suitdev.com';
 
 const fetchPosts = async () => {
-  const url = `/api/ideas?page[number]=${currentPage}&page[size]=${perPage}&append[]=small_image&append[]=medium_image&sort=${sort}`;
+ const url = `${BASE_API}/ideas?page[number]=${currentPage}&page[size]=${perPage}&append[]=small_image&append[]=medium_image&sort=${sort}`;
   console.log('Fetching:', url);
 
   try {
