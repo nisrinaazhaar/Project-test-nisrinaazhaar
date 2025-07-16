@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ideas List</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <header id="site-header">
+      <img src="/img/logo.png" alt="Logo" height="30" />
+
+      <div class="menu-toggle" id="menuToggle">☰</div>
+
+      <nav id="mainNav">
+        <ul>
+          <li data-title="Work" data-subtitle="Our portfolio speaks quality">
+            Work
+          </li>
+          <li data-title="About" data-subtitle="Who we are and why we do it">
+            About
+          </li>
+          <li data-title="Services" data-subtitle="What we can help you with">
+            Services
+          </li>
+          <li
+            class="active"
+            data-title="Ideas"
+            data-subtitle="Where all our great things begin"
+          >
+            Ideas
+          </li>
+          <li data-title="Careers" data-subtitle="Join our amazing team">
+            Careers
+          </li>
+          <li data-title="Contact" data-subtitle="Let's work together">
+            Contact
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="banner">
+      <div class="banner-image" id="bannerImage"></div>
+      <div class="banner-content" id="bannerContent">
+        <h1 id="bannerTitle">Ideas</h1>
+        <p id="bannerSubtitle">Where all our great things begin</p>
+      </div>
+    </section>
+
+    <main>
+      <div class="controls">
+        <label for="perPageSelect">Show per page:</label>
+        <select id="perPageSelect">
+          <option value="10">10</option>
+          <option value="20">20</option>
+          <option value="50">50</option>
+        </select>
+
+        <label for="sortSelect">Sort by:</label>
+        <select id="sortSelect">
+          <option value="-published_at">Newest</option>
+          <option value="published_at">Oldest</option>
+        </select>
+      </div>
+
+      <div id="post-list" class="post-list"></div>
+
+      <div class="pagination">
+        <button id="prevPage">&laquo;</button>
+        <span id="pageIndicator">1</span>
+        <button id="nextPage">&raquo;</button>
+      </div>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
