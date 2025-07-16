@@ -15,6 +15,10 @@ if (savedState) {
   document.getElementById('perPageSelect').value = perPage;
 }
 
+const BASE_API = import.meta.env.MODE === 'development'
+  ? '/api'
+  : 'https://suitmedia-backend.suitdev.com/api';
+
 const BASE_URL = 'https://suitmedia-backend.suitdev.com';
 
 const fetchPosts = async () => {
