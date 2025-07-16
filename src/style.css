@@ -13,7 +13,7 @@
         left: 0;
         transition: top 0.3s;
         z-index: 1000;
-        padding: 16px 5%;
+        padding: 10px 5%;
         display: flex;
         justify-content: space-between;
         align-items: center;
